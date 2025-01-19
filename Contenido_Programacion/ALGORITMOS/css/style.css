@@ -148,11 +148,120 @@
         transition: .5s;
         opacity: 1;
     }
+    .img-thumbnail {
+        max-width: 100px; /* Hace que la imagen ocupe el 100% del ancho disponible */
+        height: auto;    /* Mantiene la proporción de la imagen */
+        margin-top: 2px; /* Espacio superior entre la imagen y el texto */
+    }
+    
+    
+      .kahoot-box {
+        background-color: #f9f9f9;
+        border: 2px solid #ddd;
+        border-radius: 40px;
+        padding: 40px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;  /* Agregado para usar Flexbox */
+        justify-content: space-between;  /* Espacio entre los elementos */
+        align-items: flex-start;  /* Alinea los elementos al principio */
+        max-width: 2000px;
+        margin-top: 18px;
+        transition: box-shadow 0.3s ease;
+      }
+    
+      .kahoot-box:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+    
+      .kahoot-content {
+        flex: 1;
+        margin-right: 20px; /* Espacio entre el formulario y la imagen */
+      }
+    
+      .kahoot-image img {
+        max-width: 300px;  /* Ajusta el tamaño de la imagen */
+        border-radius: 8px;
+      }
+    
+      .kahoot-box .question {
+        margin-bottom: 20px;
+      }
+    
+      .kahoot-box .question p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    
+      .kahoot-box .answer {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    
+      .kahoot-box .answer input {
+        margin-right: 10px;
+      }
+    
+      .feedback {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    
+      .feedback p {
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+      }
+    
+      .feedback p.correct {
+        color: #4CAF50;
+        background-color: #d4edda;
+      }
+    
+      .feedback p.incorrect {
+        color: #DC3545;
+        background-color: #f8d7da;
+      }
+      .col-lg-8.content {
+        margin: 0 auto; /* Centrar horizontalmente el contenedor si es necesario */
+        text-align: justify; /* Justificar el texto */
+      }      
+      
+      .col-lg-8.content .row {
+        justify-content: center; /* Centrar las columnas internas si es necesario */
+      }
+
+      .steps .step-image {
+        width: 80px; /* Ajusta el ancho deseado */
+        height: 80px; /* Asegúrate de que el alto sea igual al ancho para mantener la forma circular */
+        border-radius: 50%; /* Convierte las imágenes en círculos */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        display: block; /* Asegura que se comporte como un bloque para el centrado */
+        object-fit: cover; /* Asegura que la imagen se recorte correctamente dentro del círculo */
+      }   
+      .steps .step-image {
+        width: 80px;              /* Tamaño inicial de la imagen */
+        height: 80px;             /* Mantener la proporción cuadrada */
+        border-radius: 50%;       /* Mantiene la forma circular */
+        margin: 0 auto;           /* Centra la imagen horizontalmente */
+        display: block;           /* Asegura que se comporte como un bloque para el centrado */
+        object-fit: cover;        /* Asegura que la imagen se recorte correctamente dentro del círculo */
+    }
+      /* Puntuacion Final de todo */
+    .score-container {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #f1f1f1;
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid #ddd;
+      }
+      
 }
-
-
-
-
 
 
 
@@ -173,5 +282,39 @@
         width: 300px;
     }
 }
+
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 768px) {
+    .steps .step-image {
+        width: 50px;           /* Reduce el tamaño en pantallas más pequeñas */
+        height: 50px;          /* Mantiene la forma circular */
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+    .steps .step-image {
+        width: 80px;           /* Tamaño más grande en pantallas grandes */
+        height: 80px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    .steps .step-image {
+        width: 50px;           /* Reduce el tamaño en pantallas pequeñas */
+        height: 50px;          /* Mantiene la forma circular */
+    }
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+    .steps .step-image {
+        width: 50px;           /* Ajuste de tamaño para pantallas medianas */
+        height: 50px;          /* Mantiene la forma circular */
+    }
+}
+
 
 

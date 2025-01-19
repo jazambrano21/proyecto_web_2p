@@ -90,16 +90,16 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i>¿Qué es un Algoritmo?</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Conceptos Básicos</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Ejercicios Practicos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="#">Ejercicios Practicos</a></li>
+            <li class="dropdown"><a href="#"><span>Ejercicios Practicos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep</a></li>
                 <li><a href="#">Deep Dropdown 2</a></li>
                 <li><a href="#">Deep Dropdown 3</a></li>
                 <li><a href="#">Deep Dropdown 4</a></li>
@@ -152,11 +152,11 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/algoritmo.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Alex Smith</h2>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2>Bienvenido </h2>
+        <p>A <span class="typed" data-typed-items="su Curso de Algoritmos">:3</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -166,44 +166,117 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2>¿Qué es un Algoritmo?</h2>
+        <p>Un algoritmo es una serie de pasos organizados que se utilizan para resolver un problema o realizar una tarea. </p>
+        <p>Es como una receta de cocina: sigues las instrucciones paso a paso para obtener un resultado.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p>Mira el video para mejor entendimiento.</p>
 
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          <!-- Columna del video -->
+          <div class="col-lg-6">
+            <video class="img-fluid" controls>
+              <source src="assets/videos/algoritmo.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
           </div>
+          
+          <!-- Columna del texto -->
+          <div class="col-lg-6">
+            <p>Un algoritmo es como una receta de cocina: sigues las instrucciones paso a paso para obtener un resultado.</p>
+            <ul>
+              <li>Lavas las manos.</li>
+              <li>Tomas una rebanada de pan.</li>
+              <li>Pones mantequilla sobre el pan.</li>
+              <li>Tomas otra rebanada de pan y la colocas encima.</li>
+            </ul>
+            <p>
+              ¡Listo, tienes un sándwich! 
+              <img src="assets/img/pan.png" alt="Sándwich" class="img-thumbnail">
+              ¡Eso es un algoritmo! 
+            </p>
+            <p>
+              Así como sigues pasos en una receta, un algoritmo son los pasos que una computadora sigue para resolver un problema. 
+            </p> 
+          </div>
+                    <!-- Formulario de aprendizaje -->
+          <div class="container" data-aos="fade-up" data-aos-delay="200">
+            <h3>Prueba tus conocimientos sobre algoritmos</h3>
+            <div class="kahoot-box">
+              <div class="kahoot-content">
+                <!-- Cuadro de preguntas -->
+                <form id="kahoot-form">
+                  <div class="question">
+                    <p><strong>¿Qué es un algoritmo?</strong></p>
+                    <label class="answer">
+                      <input type="radio" name="q1" value="correct" onclick="checkAnswer(this)">
+                      Un conjunto de pasos organizados para resolver un problema.
+                    </label>
+                    <label class="answer">
+                      <input type="radio" name="q1" value="incorrect" onclick="checkAnswer(this)">
+                      Una receta de cocina.
+                    </label>
+                    <label class="answer">
+                      <input type="radio" name="q1" value="incorrect" onclick="checkAnswer(this)">
+                      Un conjunto de instrucciones para cocinar.
+                    </label>
+                  </div>
+
+                  <div class="question">
+                    <p><strong>¿Qué sigue después de poner mantequilla sobre el pan?</strong></p>
+                    <label class="answer">
+                      <input type="radio" name="q2" value="correct" onclick="checkAnswer(this)">
+                      Colocar otra rebanada de pan encima.
+                    </label>
+                    <label class="answer">
+                      <input type="radio" name="q2" value="incorrect" onclick="checkAnswer(this)">
+                      Comer el pan con mantequilla.
+                    </label>
+                    <label class="answer">
+                      <input type="radio" name="q2" value="incorrect" onclick="checkAnswer(this)">
+                      Lavar las manos otra vez.
+                    </label>
+                  </div>
+                </form>
+                
+                <!-- Retroalimentación -->
+                <div id="feedback-1" class="feedback"></div>
+              </div>
+              
+              <!-- Imagen al lado -->
+              <div class="kahoot-image">
+                <img src="assets/img/pregunta1.png" alt="Imagen explicativa" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+ 
+        
           <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <p></p>
+            <h2>Conceptos Fundamentales del Algoritmo</h2>
             <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Veamos los conceptos teóricos básicos del algoritmo usando una receta de cocina para mejor entendimiento.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Entrada:</strong> <span>Puedes pensar en esto como los ingredientes en una receta de cocina. </span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Proceso:</strong> <span>El proceso es donde ocurre la magia. Siguiendo con nuestra analogía de la receta, esto sería como mezclar los ingredientes y hornear la mezcla para hacer una galleta.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Salida: </strong> <span>Es lo que obtienes después de seguir todos los pasos del proceso. En nuestra receta, la salida serían las deliciosas galletas terminadas.</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Secuencia:</strong> <span>Si mezclas los ingredientes en el orden equivocado, es posible que no obtengas lo que esperabas. La secuencia es vital para que el algoritmo funcione correctamente.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Iteración (Bucles):</strong> <span>significa repetir algunos pasos varias veces. Imagina que estás haciendo muchas galletas; podrías repetir los pasos de “poner la masa en la bandeja” y “hornear” hasta que hayas hecho todas las galletas.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Eficiencia:</strong> <span>Algunas recetas son más rápidas y fáciles de hacer que otras. De la misma manera, algunos algoritmos resuelven problemas más rápidamente que otros.</span></li>
                 </ul>
               </div>
             </div>
-            <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p>
+            
           </div>
         </div>
 
@@ -212,57 +285,54 @@
     </section><!-- /About Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
+    <section id="steps" class="steps section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+        <h2 class="text-center">Problema: ¿Cómo vestirte para ir al colegio?</h2>
         <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
+          <div class="col-lg-2 col-md-4 step-item">
+            <img src="assets/ejemplo/levantate.png" alt="Levántate" class="step-image">
+            <p><strong>Levántate</strong></p>
+          </div><!-- Step 1 -->
+    
+          <div class="col-lg-2 col-md-4 step-item">
+            <img src="assets/ejemplo/elige.png" alt="Elige tu ropa" class="step-image">
+            <p><strong>Elige tu ropa</strong></p>
+          </div><!-- Step 2 -->
+    
+          <div class="col-lg-2 col-md-4 step-item">
+            <img src="assets/ejemplo/ponte.png" alt="Póntela" class="step-image">
+            <p><strong>Póntela</strong></p>
+          </div><!-- Step 3 -->
+    
+          <div class="col-lg-2 col-md-4 step-item">
+            <img src="assets/ejemplo/zapatos.png" alt="Ponte los zapatos" class="step-image">
+            <p><strong>Ponte los zapatos</strong></p>
+          </div><!-- Step 4 -->
+    
+          <div class="col-lg-2 col-md-4 step-item">
+            <img src="assets/ejemplo/salir.png" alt="Sal de casa" class="step-image">
+            <p><strong>Sal de casa</strong></p>
+          </div><!-- Step 5 -->
+    
+          <div class="col-lg-2 col-md-4 step-item">
+            <p></p>
+            <p></p>
+            <p><strong>¡Eso es un algoritmo!</strong></p>
+          </div><!-- Step 6 -->
         </div>
-
       </div>
+    </section>
+    
 
-    </section><!-- /Stats Section -->
+    <!-- /Stats Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Algoritmos en la programacion</h2>
+        <p>En la programación, un algoritmo es como un plan que le dice a la computadora qué pasos seguir para resolver un problema o realizar una tarea. Los programadores escriben algoritmos que instruyen a las computadoras sobre lo que deben hacer y cómo deben hacerlo.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -330,8 +400,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2>Conceptos Básicos</h2>
+        <p>Así como sigues pasos en una receta o los pasos de la vida diaria, un algoritmo son los pasos que una computadora sigue para resolver un problema. </p>
+        <p>Un algoritmo necesita instrucciones claras y fáciles de seguir, como cuando te dicen: “Primero haces esto, luego haces aquello”. </p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -339,66 +410,301 @@
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
+            <h3 class="resume-title">Operaciones Básicas</h3>
+            <p>Los algoritmos suelen realizar operaciones simples como leer datos, procesarlos y mostrar resultados, así como también realizar cálculos simples como sumar, restar, multiplicar o dividir</p>
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <h4> </h4>
+              <p><em></em></p> 
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>Lectura de datos: Obtener datos de una fuente, como el usuario o un archivo.</li>
+                <li>Escritura de datos: Mostrar resultados al usuario o guardar en un archivo. </li>
+                <li>Operaciones aritméticas: Sumar, restar, multiplicar, dividir, calcular el módulo (resto de una división).</li>
+                <li>Comparaciones: Igualdad (==), desigualdad (!=), mayor que (>), menor que (<), mayor o igual que (>=), menor o igual que (<=).</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+            <h3 class="resume-title">Condicionales </h3>
+            <p>Permiten tomar decisiones dependiendo de ciertas condiciones. </p>
+            <div class="resume-item">
+              <h4></h4>
+              <ul>
+              <li><p><em>Condicional simple: Ejecuta una acción si se cumple una condición.  </em></p></li>
+                <p><em> </em></p> 
+                <p><em>Si condición Entonces  </em></p> 
+                <p><em>acción</em></p> 
+                <p><em> FinSi </em></p>
+
+                <li><p><em>Condicional compuesta: Incluye una acción alternativa si no se cumple la condición inicial.</em></p></li>
+                <p><em> </em></p> 
+                <p><em>Si condición Entonces </em></p> 
+                <p><em>acción1</em></p> 
+                <p><em>sino</em></p> 
+                <p><em>acción2</em></p> 
+                <p><em> FinSi </em></p>
+              </ul>
+            </div><!-- Edn Resume Item -->
+            
+
+            <h3 class="resume-title">Ciclos</h3>
+            <p>Sirven para repetir acciones un cierto número de veces. </p>
+            <div class="resume-item">
+              <h4></h4>
+              <ul>
+              <li><p><em>Ciclo Mientras: Repite las acciones mientras se cumpla una condición.   </em></p></li>
+                <p><em> </em></p> 
+                <p><em>Mientras condición Hacer </em></p> 
+                <p><em>acciones </em></p> 
+                <p><em> FinMientras</em></p>
+
+                <li><p><em>Ciclo Para: Repite las acciones un número específico de veces.  </em></p></li>
+                <p><em> </em></p> 
+                <p><em>Para i <- inicio Hasta fin Hacer </em></p> 
+                <p><em>acciones </em></p> 
+                <p><em>sino</em></p> 
+                <p><em>FinPara </em></p> 
               </ul>
             </div><!-- Edn Resume Item -->
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title">Funciones Matemáticas Básicas  </h3>
+            <p>AGREGAR TEXTO EXPLICATIVO </p>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+              <h4></h4>
+              <h5></h5>
+              <p><em> </em></p>
+              <ul>
+                <li><p><em>Potencia: Elevar un número a la potencia de otro.    </em></p></li>
+                <p><em> </em></p> 
+                <p><em>potencia <- base^exponente  </em></p> 
+
+                <li><p><em>Raíz Cuadrada: Calcular la raíz cuadrada de un número. </em></p></li>
+                <p><em></em></p> 
+                <p><em>raíz_cuadrada <- sqrt(número) </em></p> 
+
+                <li><p><em>Logaritmo: Calcular el logaritmo de un número en una base específica.  </em></p></li>
+                <p><em></em></p> 
+                <p><em>logaritmo <- log(número, base) </em></p> 
+                
+              </ul>
             </div><!-- Edn Resume Item -->
 
+            <h3 class="resume-title">Factorial de un número   </h3>
+            <p>El factorial (“n!”) es el producto de todos los números desde 1 hasta “n”.  </p>
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+              <h4></h4>
+              <h5></h5>
+              <p><em> </em></p>
+              <ul>
+                <li><p><em>Calcular el factorial de “n”     </em></p></li>
+                <p><em>Leer "n".  </em></p> 
+                <p><em>factorial <- 1.   </em></p> 
+                <p><em>Para i <- 1 Hasta n Hacer factorial <- factorial * i  </em></p> 
+                <p><em>FinPara  </em></p> 
+                <p><em>Escribir "El factorial es:", factorial.  </em></p> 
+
+                
+              </ul>
             </div><!-- Edn Resume Item -->
+
 
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
+           
+
+            
+
+            <h3 class="resume-title">Serie de Fibonacci   </h3>
+            <p>La Serie de Fibonacci comienza con 0 y 1; cada término siguiente es la suma de los dos anteriores.   </p>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4></h4>
+              <h5></h5>
+              <p><em> </em></p>
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                <li><p><em>Generar la serie hasta el término “n”     </em></p></li>
+                <p><em>Leer un número (“n”).   </em></p> 
+                <p><em>Inicializar “a = 0”, “b = 1”. </em></p> 
+                <p><em>Imprimir “a”, “b”.   </em></p> 
+                <p><em>Para cada término desde 3 hasta “n”:  </em></p> 
+                <p><em>c = a + b.   </em></p> 
+                <p><em>Imprimir c.   </em></p> 
+                <p><em>Actualizar a = b, b = c.  </em></p> 
+                <p><em>FinPara   </em></p> 
               </ul>
             </div><!-- Edn Resume Item -->
 
+            <h3 class="resume-title"> Manejo de Cadenas   </h3>
+            <p>  </p>
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4></h4>
+              <h5></h5>
+              <p><em> </em></p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li><p><em>Contar caracteres en una cadena: Este algoritmo cuenta la cantidad de caracteres en una cadena.   </em></p></li>
+                <p><em>Leer una cadena cadena.    </em></p> 
+                <p><em>Inicializar contador = 0.  </em></p> 
+                <p><em>Para cada carácter en cadena:    </em></p> 
+                <p><em>Incrementar contador en 1.   </em></p> 
+                <p><em>Imprimir contador.   </em></p> 
+
+                <li><p><em>Verificar si una palabra es un palíndromouna (palabra que se lee igual de izquierda a derecha y de derecha a izquierda).    </em></p></li>
+                <p><em>Leer palabra.     </em></p> 
+                <p><em>Comparar palabra con su inversa.   </em></p> 
+                <p><em>Si son iguales, imprimir "Es un palíndromo".    </em></p> 
+                <p><em>Si no, imprimir "No es un palíndromo".   </em></p> 
+                
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Arreglos (Vectores y Matrices)    </h3>
+            <p>  </p>
+            <div class="resume-item">
+              <h4></h4>
+              <h5></h5>
+              <p><em> </em></p>
+              <ul>
+                <li><p><em>Operaciones con vectores (suma de los elementos de un vector )   </em></p></li>
+                <p><em>Leer el tamaño del vector n.    </em></p> 
+                <p><em>Leer los n elementos del vector A.  </em></p> 
+                <p><em>Inicializar suma = 0.     </em></p> 
+                <p><em>Para i = 1 hasta n:   </em></p> 
+                <p><em>suma = suma + A[i].   </em></p> 
+                <p><em>Imprimir suma.    </em></p> 
+
+                <li><p><em>Operaciones con matrices  (suma de los elementos de dos matrices)   </em></p></li>
+                <p><em>Leer el tamaño de las matrices n × m.    </em></p> 
+                <p><em>Leer los elementos de la matriz A.   </em></p> 
+                <p><em>Leer los elementos de la matriz B.      </em></p> 
+                <p><em>Inicializar una matriz C de n × m.  </em></p> 
+                <p><em>Para i = 1 hasta n:   </em></p> 
+                <p><em>Para j = 1 hasta m:     </em></p> 
+                <p><em>C[i][j] = A[i][j] + B[i][j].   </em></p> 
+                <p><em>Imprimir la matriz C.     </em></p> 
+
+                <li><p><em>Búsquedas y ordenamientos en arreglos   </em></p></li>
+                <p>Búsqueda lineal en un vector: Este algoritmo realiza una búsqueda lineal para encontrar un número en un vector.  </p> 
+                <p><em>Leer el tamaño del vector n.   </em></p> 
+                <p><em>Leer los n elementos del vector A.      </em></p> 
+                <p><em>Leer el número x a buscar.   </em></p> 
+                <p><em>Para i = 1 hasta n:   </em></p> 
+                <p><em>Si A[i] = x, imprimir "Encontrado en posición i" y terminar.     </em></p> 
+                <p><em>Si no se encuentra, imprimir "No encontrado".   </em></p> 
+                
               </ul>
             </div><!-- Edn Resume Item -->
 
           </div>
 
         </div>
+                <!-- Formulario de aprendizaje -->
+        <div class="container" data-aos="fade-up" data-aos-delay="200">
+          <h3>Prueba tus conocimientos sobre algoritmos</h3>
+          <div class="kahoot-box">
+            <div class="kahoot-content">
+              <!-- preguntas -->
+              <form id="kahoot-form">
+                <div class="question">
+                  <p><strong>¿Cuál es una operación básica que realiza un algoritmo?</strong></p>
+                  <label class="answer">
+                    <input type="radio" name="q1" value="correct" onclick="checkAnswer(this)">
+                    Leer datos de una fuente, como el usuario o un archivo.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q1" value="incorrect" onclick="checkAnswer(this)">
+                    Dibujar gráficos avanzados.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q1" value="incorrect" onclick="checkAnswer(this)">
+                    Realizar cálculos exclusivos de inteligencia artificial.
+                  </label>
+                </div>
+
+                <div class="question">
+                  <p><strong>¿Cuál es la estructura que se usa para ejecutar acciones repetitivas mientras se cumple una condición?</strong></p>
+                  <label class="answer">
+                    <input type="radio" name="q2" value="correct" onclick="checkAnswer(this)">
+                    Ciclo Mientras.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q2" value="incorrect" onclick="checkAnswer(this)">
+                    Condicional simple.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q2" value="incorrect" onclick="checkAnswer(this)">
+                    Operación básica.
+                  </label>
+                </div>
+
+                <div class="question">
+                  <p><strong>¿Qué es un condicional simple en un algoritmo?</strong></p>
+                  <label class="answer">
+                    <input type="radio" name="q3" value="correct" onclick="checkAnswer(this)">
+                    Una estructura que ejecuta una acción si se cumple una condición.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q3" value="incorrect" onclick="checkAnswer(this)">
+                    Una estructura que ejecuta acciones de manera indefinida.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q3" value="incorrect" onclick="checkAnswer(this)">
+                    Un bucle que repite una acción varias veces.
+                  </label>
+                </div>
+
+                <div class="question">
+                  <p><strong>¿Qué operación realiza el siguiente algoritmo?  
+                    <code>Para i ← 1 Hasta n Hacer  
+                    suma ← suma + A[i]  
+                    FinPara</code>
+                  </strong></p>
+                  <label class="answer">
+                    <input type="radio" name="q4" value="correct" onclick="checkAnswer(this)">
+                    Suma los elementos de un vector.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q4" value="incorrect" onclick="checkAnswer(this)">
+                    Encuentra el número más grande de un vector.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q4" value="incorrect" onclick="checkAnswer(this)">
+                    Ordena los elementos de un vector.
+                  </label>
+                </div>
+
+                <div class="question">
+                  <p><strong>¿Qué hace un algoritmo para verificar si una palabra es un palíndromo?</strong></p>
+                  <label class="answer">
+                    <input type="radio" name="q5" value="correct" onclick="checkAnswer(this)">
+                    Compara la palabra con su versión inversa.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q5" value="incorrect" onclick="checkAnswer(this)">
+                    Cuenta los caracteres y verifica que sean pares.
+                  </label>
+                  <label class="answer">
+                    <input type="radio" name="q5" value="incorrect" onclick="checkAnswer(this)">
+                    Convierte la palabra en mayúsculas y busca un patrón.
+                  </label>
+                </div>
+              </form>
+
+              <!-- Retroalimentación -->
+              <div id="feedback-2" class="feedback"></div>
+            </div>
+
+            <!-- Imagen al lado -->
+            <div class="kahoot-image">
+              <img src="assets/img/pregunta1.png" alt="Imagen explicativa" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="score-container">
+          <p>Total de respuestas correctas: <span id="correct-answers">0</span></p>
+        </div>
+        
+
+
 
       </div>
+
 
     </section><!-- /Resume Section -->
 
@@ -882,6 +1188,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="js/script.js"></script>
+
+  
+
 
 </body>
 
