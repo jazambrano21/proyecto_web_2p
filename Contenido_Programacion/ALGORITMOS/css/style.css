@@ -260,6 +260,14 @@
         border-radius: 8px;
         border: 2px solid #ddd;
       }
+      .rounded-small-image {
+        border-radius: 20px; /* Bordes redondeados */
+        max-width: 240px;    /* Tamaño máximo */
+        height: auto;        /* Mantén la proporción */
+        display: block;      /* Asegura que se comporte como un bloque */
+        margin: 10px auto;   /* Centrado con margen superior e inferior */
+    }
+    
       
 }
 
