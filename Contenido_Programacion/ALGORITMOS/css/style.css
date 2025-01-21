@@ -267,7 +267,13 @@
         display: block;      /* Asegura que se comporte como un bloque */
         margin: 10px auto;   /* Centrado con margen superior e inferior */
     }
-    
+    .result-box {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
       
 }
 
