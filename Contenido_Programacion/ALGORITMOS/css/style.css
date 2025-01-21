@@ -261,12 +261,18 @@
         border: 2px solid #ddd;
       }
       .rounded-small-image {
-        border-radius: 20px; /* Bordes redondeados */
-        max-width: 240px;    /* Tamaño máximo */
-        height: auto;        /* Mantén la proporción */
-        display: block;      /* Asegura que se comporte como un bloque */
-        margin: 10px auto;   /* Centrado con margen superior e inferior */
+        border-radius: 20px;   /* Bordes redondeados */
+        max-width: 100%;       /* Se ajusta al 100% del contenedor */
+        width: 100%;           /* Asegura que la imagen sea responsiva */
+        height: auto;          /* Mantén la proporción */
+        display: block;        /* Asegura que se comporte como un bloque */
+        margin: 10px auto;     /* Centrado con margen superior e inferior */
     }
+    
+    
+    
+    
+    
     .result-box {
         margin-top: 20px;
         padding: 15px;
@@ -331,4 +337,18 @@
 }
 
 
+/* Ajuste para pantallas medianas y grandes */
+@media (min-width: 601px) {
+    .rounded-small-image {
+        max-width: 240px;   /* Limita el tamaño máximo en pantallas medianas y grandes */
+        border-radius: 20px; /* Mantiene los bordes redondeados */
+    }
+}
 
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    .rounded-small-image {
+        max-width: 100%;    /* En pantallas pequeñas, ocupa todo el ancho disponible */
+        border-radius: 15px; /* Puedes reducir el radio de los bordes si lo deseas */
+    }
+}
