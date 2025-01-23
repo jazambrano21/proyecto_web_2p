@@ -105,5 +105,17 @@
         }
     });
     
+        // Función para mostrar/ocultar contenido dinámico en las tarjetas
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.classList.contains('d-none')) {
+                content.classList.remove('d-none');
+            } else {
+                content.classList.add('d-none');
+            }
+        }
+    
+        // Exponer la función para ser llamada desde el HTML
+        window.toggleContent = toggleContent;
 })(jQuery);
 
